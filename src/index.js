@@ -1,7 +1,5 @@
 module.exports = function reverse (n) {
-    if ( n === Math.abs(n)) {
-        return reverse(n);
-    } else if ( n !== Math.abs(n)) {
-        return Math.abs(reverse(n))
-    }
-}
+    return +(String((n > 0) ? n : (n * (-1))).split('').reverse().join(''));
+  }
+
+
